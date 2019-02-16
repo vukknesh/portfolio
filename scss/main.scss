@@ -3,17 +3,19 @@
 
 *{
   box-sizing: border-box;
+  
 }
 
 body {
   @include background;
   background: $primary-color;
-  color: white;
+  color: set-text-color($primary-color);
   height: 100%;
-  margin:0;
+  margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
 }
+
 
 //headings
 
@@ -58,7 +60,7 @@ main {
       padding: 0.4rem;
       &:hover{
         color:$secondary-color;
-        @include easeOut();
+        @include easeOut;
       }
     }
   }
